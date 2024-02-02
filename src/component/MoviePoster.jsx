@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import "../styles/section01.css";
 import Section01Container from './Section01Container';
 
+let movieUrl = '';
+
 function MoviePoster(props) {
     const apiUrl = `https://api.themoviedb.org/3/movie/${props.movieId}/images?include_image_language=en&language=en`;
     const [data, setData] = useState([]);
@@ -30,16 +32,16 @@ function MoviePoster(props) {
 
 
     if (data.posters && data.posters.length > 0) {
+        movieUrl = `https://image.tmdb.org/t/p/original/${data.posters[0].file_path}`;
+
         return (
             <div className={props.givenClass} style={{
-                backgroundImage: `url(https://image.tmdb.org/t/p/original/${data.posters[0].file_path}
-            )` }}>
+                backgroundImage: `url(${movieUrl})`
+            }}>
                 {props.function === 'true' && <Section01Container />}
             </div>
         );
     }
-
-
 }
 
-export default MoviePoster;
+export { MoviePoster, movieUrl }; 

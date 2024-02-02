@@ -60,9 +60,9 @@ export default function Section01() {
                 <div id='section01Child'>
                     <Navbar />
                     <div className="carousel">
-                    <button className='switchBtn' onClick={prevCard}>Previous</button>
+                        <button className='switchBtn' onClick={prevCard}>Previous</button>
                         <CarousalCard movieId={latest.items[currentIndex].id} />
-                    <button className='switchBtn' onClick={nextCard}>Next</button>
+                        <button className='switchBtn' onClick={nextCard}>Next</button>
                     </div>
                 </div>
             ) : (

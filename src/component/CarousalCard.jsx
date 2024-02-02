@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import MoviePoster from './MoviePoster';
+import {MoviePoster,movieUrl} from './MoviePoster';
 import { token } from '../apiLinks';
 import "../styles/carousalCard.css";
 
@@ -64,7 +64,7 @@ function CarousalCard(props) {
                 <div className='carousalImgContainer'>
                     <MoviePoster givenClass='carousalImg' movieId={props.movieId} />
                 </div>
-                <div className='carousalContent'>
+                <div className='carousalContent' >
                         <h2>{data.items.title}</h2>
                     <div className='dateAndRate'>
                         <p>{data.items.release_date}</p>
