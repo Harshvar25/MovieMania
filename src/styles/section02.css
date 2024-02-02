@@ -1,0 +1,28 @@
+.section02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.cardContainer {
+    width: auto;
+    height: 280px;
+    margin: 2rem 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.card {
+    height: auto;
+    width: 9rem;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+.card:hover{
+    border: solid #00c030;
+    width: 10rem;
+}

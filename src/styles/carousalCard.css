@@ -1,0 +1,44 @@
+.carousalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: blueviolet;
+    width: 80%;
+    height: 60vh;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.carousalImgContainer {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousalImg {
+    height: 90%;
+    width: 90%;
+    background-size: contain;
+    object-fit: none;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.carousalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.dateAndRate {
+    display: flex;
+}
+
+.subContent p {
+    width: 100%;
+}

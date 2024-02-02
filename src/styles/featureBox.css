@@ -1,0 +1,27 @@
+.featureBox{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    color: #99aabb;
+    width: 18rem;
+    background-color: #445566;
+    gap: 5px;
+}
+.greenBox:hover{
+    background-color: #00c030;
+    color: white;
+}
+.orangeBox:hover{
+    background-color: #ee7000;
+    color: white;
+}
+.blueBox:hover{
+    background-color: #209ce4;
+    color: white;
+}
+
+p{
+    width: 14rem;
+}
